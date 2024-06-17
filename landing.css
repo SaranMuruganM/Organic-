@@ -12,6 +12,7 @@ nav {
   width: 100%;
   top: 0;
   background-color: aliceblue;
+  z-index: 999;
 }
 
 .logo {
@@ -102,7 +103,7 @@ h1 {
 
 .advertise {
   height: 300px;
-  margin-top: 50px;
+  margin: 50px 0;
   text-align: center;
   background-image: url(./assets/fresh-green-leaves-flying-wind.png);
   background-repeat: repeat-x;
@@ -115,7 +116,7 @@ h1 {
 
 .selling {
   display: grid;
-  margin-top: 100px;
+  margin-top: 150px;
   height: 600px;
   grid-template-rows: 10% 2px 1fr;
 }
@@ -128,7 +129,7 @@ h1 {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(25%);
-  gap: 30px;
+
   margin: 10px 50px;
   padding-top: 20px;
 }
@@ -136,14 +137,31 @@ h1 {
 .prod1 {
   border-right: 1px solid gainsboro;
   height: 430px;
+  /* padding-left: 5%; */
+  text-align: center;
 }
+
+.prod1 button {
+  all: unset;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  transition: margin 0.5s;
+}
+
+.prod1 button:hover {
+  background-color: gainsboro;
+  opacity: 0.8;
+  /* margin-inline: 10px; */
+}
+
 .prod1 h4:nth-child(2) {
   color: greenyellow;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 10px;
 }
 .prod1 img {
-  height: 60%;
+  height: 70%;
   width: 80%;
   margin-bottom: 10px;
   border-radius: 3px;
@@ -151,7 +169,7 @@ h1 {
 
 .prod1 h4:nth-child(4) {
   margin-top: 10px;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .prod1 h3 {
@@ -174,13 +192,16 @@ h1 {
   grid-template-columns: repeat(25%);
   grid-auto-flow: column;
   gap: 10px;
-  margin: 20px 80px 0;
+  margin: 20px 5% 0;
 }
 
 .reviewhead {
-  margin: 20px 80px 0;
+  margin: 20px 5% 0;
   display: grid;
   grid-template-columns: 50% 50%;
+  background-color: gainsboro;
+  border-radius: 5px;
+  padding: 10px 5% 10px 10px;
 }
 
 .reviewhead button {
@@ -218,8 +239,9 @@ h1 {
   grid-template-rows: 45% 95px 1fr;
   background-color: gainsboro;
   justify-items: center;
-  padding: 20px 20px 0px;
+  padding: 20px 20px 10px;
   border-radius: 5px;
+  overflow: hidden;
 }
 .review img:nth-child(1) {
   height: 160px;
@@ -240,7 +262,7 @@ h1 {
 
 .shopnow {
   height: 100px;
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   padding-inline: 5%;
   background-color: black;
