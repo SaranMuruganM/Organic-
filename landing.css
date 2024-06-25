@@ -11,6 +11,10 @@
   --fs-300: clamp(0.75rem, 1.25vw, 1.75rem);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -27,7 +31,7 @@ nav {
   z-index: 999;
 }
 
-nav button {
+nav button:first-child {
   margin-left: 10px;
   all: unset;
   cursor: pointer;
@@ -61,6 +65,7 @@ ul li a {
   font-size: var(--fs-300);
   text-decoration: none;
   margin-right: 10px;
+  color: green;
 }
 
 ul li a:visited,
@@ -74,11 +79,35 @@ a:active {
   margin-right: 70px;
 }
 
+.logotext {
+  all: unset;
+  display: flex;
+  margin-left: 30px;
+  letter-spacing: 4px;
+}
+.logotext h3 {
+  color: #613393;
+}
+
+.logotext h3,
+.logotext span {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-family: serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.logotext span {
+  font-size: 2.5rem;
+  color: #00cb76;
+}
+
 @media (max-width: 710px) {
   nav ul {
     display: none;
   }
-  nav button {
+  nav button:first-child {
     display: block;
   }
   nav {
@@ -87,8 +116,11 @@ a:active {
   nav a {
     margin-left: auto;
   }
+  .logotext {
+    margin-inline: auto;
+  }
   .logo {
-    margin-left: auto;
+    display: none;
   }
 }
 /*Header */
@@ -137,9 +169,11 @@ h1 {
 }
 
 .sec-cont h4 {
-  font-size: clamp(1.75, 4vw, 2rem);
+  margin-top: 0.5rem;
+  word-spacing: 2px;
+  font-size: clamp(1.75, 5vw, 2rem);
 
-  color: grey;
+  color: rgb(78, 76, 76);
 }
 .sec-cont h1 {
   font-size: 3rem;
@@ -381,7 +415,7 @@ h1 {
 }
 button span {
   color: white;
-  font-size: clamp(1rem, 1.2rem, 1.3rem);
+  font-size: clamp(0.5rem, 1.2rem, 1.3rem);
 }
 .shopnow img {
   color: aliceblue;
