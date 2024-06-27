@@ -7,31 +7,46 @@
     <title>Product</title>
     <link rel="stylesheet" href="product.css" />
     <link rel="shortcut icon" href="./assets/organic_5391506.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
   </head>
   <body>
-    <nav>
+   
+   <nav>
+      <button><img src="./assets/menu_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="menu"></button>
+
       <img src="./assets/organic_5391506.png" alt="logo" class="logo" />
+
+      <button class="logotext" ><h3>Bloom</h3><span>dale</span></button>
+
 
       <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#foot">Contact</a></li>
       </ul>
 
       <a href="#"
-        ><img src="./assets/shopping-bag_4251080.png" alt="cart" class="cart"
+        class="cartlogo"><img src="./assets/shopping-bag_4251080.png" alt="cart" class="cart"
       /></a>
     </nav>
     <div class="product">
       <div class="left">
+        <div class="sideimg">
+          <img src="./assets/471.jpg" alt="tomato">
+          <img src="./assets/set-realistic-full-sliced-tomatoes-vectors.png" alt="">
+        </div>
         <img
           src="./assets/front-view-fresh-red-tomatoes-inside-basket.jpg"
           alt="Tomatoes"
         />
+
       </div>
       <div class="right">
-        <div class="prod-desc">
+        <!-- <div class="prod-desc"> -->
           <h1>Freshly Harvested Tomatoes</h1>
           <h3>
             Price: ₹80.00
@@ -39,11 +54,17 @@
           </h3>
           <div class="off"><h4>You Save: 24% Off</h4>
           <h5>(inclusive of all taxes)</h5></div>
+          <div class="description">
+            <h3>Description</h3>
+            <p>Fresh, and delicious tomatoes are a summertime favourite. Tomatoes are perfect for sauces and salsas, or try marinating them in herbs and olive oil for an easy appetizer. Enjoy a delicious cup of tomato soup on a lazy afternoon or simply use it as a pizza topping on an exciting evening watching your favourite sports. So, go ahead, buy Tomato online now!</p>
+          </div>
           
           <button class="buynow">Buy Now</button>
           <button class="basket">Add to Basket</button>
-        </div>
-        <div class="prod-size">
+        <!-- </div> -->
+        
+      </div>
+      <div class="prod-size">
           <h3>Pack Sizes</h3>
           <button>
             <h4>1 Kg</h4>
@@ -73,7 +94,6 @@
             </div>
           </button>
         </div>
-      </div>
     </div>
     <div class="selling">
       <h1>Similar Products</h1>
@@ -129,7 +149,7 @@
         </div>
       </div>
     </div>
-    <div class="foot">
+    <div class="foot" id="foot">
       <div class="foot-about">
         <img src="./assets/organic_5391506.png" alt="organic" />
         <p>
@@ -171,3 +191,4 @@
     </div>
   </body>
 </html>
+ 
